@@ -1,0 +1,690 @@
+{
+  "name": "CRA, NIS2 and NIST SSDF crosswalk",
+  "description": "Each requirement of the Cyber Resilience Act (Regulation (EU) 2024/2847) Annex I and Articles 13(5) and 14, mapped to the NIS2 Directive (EU) 2022/2555 provisions and NIST SSDF 1.1 practices that ask for the same or a related outcome.",
+  "url": "https://cradata.eu/crosswalk",
+  "publisher": "CVD Portal, Porta Regulus B.V.",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "version": "1.0.0",
+  "lastVerified": "2026-10-17",
+  "status": "Editorial judgement by Porta Regulus B.V. No authoritative crosswalk between these three instruments exists. Meeting one instrument does not meet another: the CRA regulates products, NIS2 Article 21 regulates an entity's own systems, and SSDF is voluntary guidance.",
+  "sources": [
+    {
+      "title": "Regulation (EU) 2024/2847 (Cyber Resilience Act)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj"
+    },
+    {
+      "title": "Directive (EU) 2022/2555 (NIS2)",
+      "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj"
+    },
+    {
+      "title": "NIST SP 800-218, SSDF version 1.1",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final"
+    },
+    {
+      "title": "NIST SP 800-218 Rev. 1, initial public draft",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/r1/ipd"
+    }
+  ],
+  "relations": {
+    "direct": "The other instrument asks for the same outcome.",
+    "partial": "The other instrument asks for part of the outcome, or for a wider outcome that includes it.",
+    "none": "No counterpart in the other instrument."
+  },
+  "legalLinks": [
+    {
+      "ref": "CRA Recital 24",
+      "summary": "The CRA aims to facilitate the compliance of digital infrastructure providers with the NIS2 supply chain requirements."
+    },
+    {
+      "ref": "CRA Recital 125",
+      "summary": "The CRA will facilitate compliance with the supply chain security obligations of entities in the scope of NIS2 and DORA."
+    },
+    {
+      "ref": "CRA Article 3(43), (45) and (51)",
+      "summary": "The CRA takes its definitions of incident, near miss and CSIRT designated as coordinator from NIS2."
+    }
+  ],
+  "citation": "CVD Portal, \"CRA, NIS2 and NIST SSDF crosswalk\", 2026-10-17. https://cradata.eu/crosswalk (CC BY 4.0)",
+  "nis2": [
+    {
+      "id": "Art. 21(2)(a)",
+      "instrument": "Directive (EU) 2022/2555",
+      "label": "policies on risk analysis and information system security"
+    },
+    {
+      "id": "Art. 21(2)(b)",
+      "instrument": "Directive (EU) 2022/2555",
+      "label": "incident handling"
+    },
+    {
+      "id": "Art. 21(2)(c)",
+      "instrument": "Directive (EU) 2022/2555",
+      "label": "business continuity, such as backup management and disaster recovery, and crisis management"
+    },
+    {
+      "id": "Art. 21(2)(d)",
+      "instrument": "Directive (EU) 2022/2555",
+      "label": "supply chain security, including security-related aspects concerning the relationships between each entity and its direct suppliers or service providers"
+    },
+    {
+      "id": "Art. 21(2)(e)",
+      "instrument": "Directive (EU) 2022/2555",
+      "label": "security in network and information systems acquisition, development and maintenance, including vulnerability handling and disclosure"
+    },
+    {
+      "id": "Art. 21(2)(f)",
+      "instrument": "Directive (EU) 2022/2555",
+      "label": "policies and procedures to assess the effectiveness of cybersecurity risk-management measures"
+    },
+    {
+      "id": "Art. 21(2)(h)",
+      "instrument": "Directive (EU) 2022/2555",
+      "label": "policies and procedures regarding the use of cryptography and, where appropriate, encryption"
+    },
+    {
+      "id": "Art. 21(2)(i)",
+      "instrument": "Directive (EU) 2022/2555",
+      "label": "human resources security, access control policies and asset management"
+    },
+    {
+      "id": "Art. 21(2)(j)",
+      "instrument": "Directive (EU) 2022/2555",
+      "label": "the use of multi-factor authentication or continuous authentication solutions, secured voice, video and text communications and secured emergency communication systems within the entity, where appropriate"
+    },
+    {
+      "id": "Art. 21(3)",
+      "instrument": "Directive (EU) 2022/2555",
+      "label": null
+    },
+    {
+      "id": "Art. 23(4)",
+      "instrument": "Directive (EU) 2022/2555",
+      "label": null
+    }
+  ],
+  "ssdf": [
+    {
+      "id": "PO.1",
+      "label": "Define Security Requirements for Software Development"
+    },
+    {
+      "id": "PO.1.3",
+      "label": "Communicate requirements to all third parties who will provide commercial software components to the organization for reuse by the organization’s own software."
+    },
+    {
+      "id": "PS.2",
+      "label": "Provide a Mechanism for Verifying Software Release Integrity"
+    },
+    {
+      "id": "PS.3.2",
+      "label": "Collect, safeguard, maintain, and share provenance data for all components of each software release (e.g., in a software bill of materials [SBOM])."
+    },
+    {
+      "id": "PW.1",
+      "label": "Design Software to Meet Security Requirements and Mitigate Security Risks"
+    },
+    {
+      "id": "PW.2",
+      "label": "Review the Software Design to Verify Compliance with Security Requirements and Risk Information"
+    },
+    {
+      "id": "PW.4.4",
+      "label": "Verify that acquired commercial, open-source, and all other third-party software components comply with the requirements, as defined by the organization, throughout their life cycles."
+    },
+    {
+      "id": "PW.6",
+      "label": "Configure the Compilation, Interpreter, and Build Processes to Improve Executable Security"
+    },
+    {
+      "id": "PW.7",
+      "label": "Review and/or Analyze Human-Readable Code to Identify Vulnerabilities and Verify Compliance with Security Requirements"
+    },
+    {
+      "id": "PW.8",
+      "label": "Test Executable Code to Identify Vulnerabilities and Verify Compliance with Security Requirements"
+    },
+    {
+      "id": "PW.9",
+      "label": "Configure Software to Have Secure Settings by Default"
+    },
+    {
+      "id": "RV.1",
+      "label": "Identify and Confirm Vulnerabilities on an Ongoing Basis"
+    },
+    {
+      "id": "RV.1.1",
+      "label": "Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software and third-party components that the software uses, and investigate all credible reports."
+    },
+    {
+      "id": "RV.1.3",
+      "label": "Have a policy that addresses vulnerability disclosure and remediation, and implement the roles, responsibilities, and processes needed to support that policy."
+    },
+    {
+      "id": "RV.2",
+      "label": "Assess, Prioritize, and Remediate Vulnerabilities"
+    },
+    {
+      "id": "RV.3",
+      "label": "Analyze Vulnerabilities to Identify Their Root Causes"
+    }
+  ],
+  "ssdfDraft": [
+    {
+      "id": "PS.4",
+      "label": "Ensure Software Updates Are Robust and Reliable"
+    }
+  ],
+  "rows": [
+    {
+      "id": "I-1",
+      "cra": {
+        "ref": "ANNEX I Part I (1)",
+        "label": "Appropriate level of cybersecurity based on the risks"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(a)"
+        ]
+      },
+      "ssdf": {
+        "relation": "partial",
+        "refs": [
+          "PO.1",
+          "PW.1"
+        ]
+      },
+      "basis": "All three start from a risk assessment. NIS2 applies it to the entity's own systems and SSDF to the development process, so neither covers the product outcome the CRA requires."
+    },
+    {
+      "id": "I-2a",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(a)",
+        "label": "No known exploitable vulnerabilities"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(e)"
+        ]
+      },
+      "ssdf": {
+        "relation": "direct",
+        "refs": [
+          "PW.4.4",
+          "PW.7",
+          "PW.8",
+          "RV.1",
+          "RV.2"
+        ]
+      },
+      "basis": "SSDF finds vulnerabilities in own and third-party code before release and remediates them, which is the activity that lets a product ship without known exploitable vulnerabilities."
+    },
+    {
+      "id": "I-2b",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(b)",
+        "label": "Secure by default"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(e)"
+        ]
+      },
+      "ssdf": {
+        "relation": "direct",
+        "refs": [
+          "PW.9"
+        ]
+      },
+      "basis": "PW.9 asks for secure settings by default, the same outcome. NIS2 covers secure configuration only as part of development and maintenance."
+    },
+    {
+      "id": "I-2c",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(c)",
+        "label": "Security updates"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(e)"
+        ]
+      },
+      "ssdf": {
+        "relation": "partial",
+        "refs": [
+          "RV.2"
+        ]
+      },
+      "ssdfDraft": [
+        "PS.4"
+      ],
+      "basis": "SSDF 1.1 requires remediation but not a delivery channel, and the 1.2 draft adds PS.4 for robust updates. The CRA adds automatic updates by default, user notification and postponement, which neither other instrument asks for."
+    },
+    {
+      "id": "I-2d",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(d)",
+        "label": "Protection from unauthorised access"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(i)",
+          "Art. 21(2)(j)"
+        ]
+      },
+      "ssdf": {
+        "relation": "partial",
+        "refs": [
+          "PO.1",
+          "PW.1"
+        ]
+      },
+      "basis": "NIS2 asks for access control and multi-factor authentication on the entity's own systems. SSDF reaches it only through security requirements and design."
+    },
+    {
+      "id": "I-2e",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(e)",
+        "label": "Confidentiality of data"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(h)"
+        ]
+      },
+      "ssdf": {
+        "relation": "partial",
+        "refs": [
+          "PO.1",
+          "PW.1"
+        ]
+      },
+      "basis": "NIS2 asks for a cryptography policy for the entity. SSDF reaches confidentiality only through security requirements and design."
+    },
+    {
+      "id": "I-2f",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(f)",
+        "label": "Integrity of data"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(h)"
+        ]
+      },
+      "ssdf": {
+        "relation": "partial",
+        "refs": [
+          "PS.2",
+          "PW.1"
+        ]
+      },
+      "basis": "PS.2 protects the integrity of the release, which covers programs but not stored data or configuration at run time."
+    },
+    {
+      "id": "I-2g",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(g)",
+        "label": "Data minimisation"
+      },
+      "nis2": {
+        "relation": "none",
+        "refs": []
+      },
+      "ssdf": {
+        "relation": "none",
+        "refs": []
+      },
+      "basis": "Data minimisation is a data protection principle. Neither NIS2 Article 21 nor SSDF asks for it."
+    },
+    {
+      "id": "I-2h",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(h)",
+        "label": "Availability of essential functions"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(c)"
+        ]
+      },
+      "ssdf": {
+        "relation": "partial",
+        "refs": [
+          "PW.1"
+        ]
+      },
+      "basis": "NIS2 business continuity covers the entity's services, not the product's essential functions. SSDF reaches availability only through design."
+    },
+    {
+      "id": "I-2i",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(i)",
+        "label": "Minimise impact on other devices"
+      },
+      "nis2": {
+        "relation": "none",
+        "refs": []
+      },
+      "ssdf": {
+        "relation": "partial",
+        "refs": [
+          "PW.1"
+        ]
+      },
+      "basis": "The impact of a product on other networks has no NIS2 counterpart. SSDF reaches it only through design."
+    },
+    {
+      "id": "I-2j",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(j)",
+        "label": "Limit attack surfaces"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(e)"
+        ]
+      },
+      "ssdf": {
+        "relation": "partial",
+        "refs": [
+          "PW.1",
+          "PW.2"
+        ]
+      },
+      "basis": "Attack surface reduction is a design decision. SSDF asks for the design and its review, not for the outcome."
+    },
+    {
+      "id": "I-2k",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(k)",
+        "label": "Reduce impact of incidents"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(e)"
+        ]
+      },
+      "ssdf": {
+        "relation": "direct",
+        "refs": [
+          "PW.6",
+          "PW.1"
+        ]
+      },
+      "basis": "PW.6 configures the build to improve executable security, which is where most exploitation mitigation techniques are switched on."
+    },
+    {
+      "id": "I-2l",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(l)",
+        "label": "Security-relevant logging"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(b)"
+        ]
+      },
+      "ssdf": {
+        "relation": "none",
+        "refs": []
+      },
+      "basis": "NIS2 incident handling needs detection on the entity's own systems. SSDF has no practice for logging in the delivered product."
+    },
+    {
+      "id": "I-2m",
+      "cra": {
+        "ref": "ANNEX I Part I (2)(m)",
+        "label": "Secure data deletion / portability"
+      },
+      "nis2": {
+        "relation": "none",
+        "refs": []
+      },
+      "ssdf": {
+        "relation": "none",
+        "refs": []
+      },
+      "basis": "Secure removal of user data and settings has no counterpart in NIS2 Article 21 or SSDF."
+    },
+    {
+      "id": "II-1",
+      "cra": {
+        "ref": "ANNEX I Part II (1)",
+        "label": "Identify & document vulnerabilities and components (SBOM)"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(d)",
+          "Art. 21(2)(i)"
+        ]
+      },
+      "ssdf": {
+        "relation": "direct",
+        "refs": [
+          "PS.3.2"
+        ]
+      },
+      "basis": "PS.3.2 asks for provenance data for every component of a release, such as an SBOM. NIS2 needs the same inventory for supply chain security and asset management."
+    },
+    {
+      "id": "II-2",
+      "cra": {
+        "ref": "ANNEX I Part II (2)",
+        "label": "Address & remediate without delay"
+      },
+      "nis2": {
+        "relation": "direct",
+        "refs": [
+          "Art. 21(2)(e)"
+        ]
+      },
+      "ssdf": {
+        "relation": "direct",
+        "refs": [
+          "RV.2",
+          "RV.3"
+        ]
+      },
+      "basis": "All three ask for vulnerabilities to be assessed and remediated. The CRA adds that security updates ship separately from functionality updates where feasible."
+    },
+    {
+      "id": "II-3",
+      "cra": {
+        "ref": "ANNEX I Part II (3)",
+        "label": "Regular security testing & reviews"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(e)",
+          "Art. 21(2)(f)"
+        ]
+      },
+      "ssdf": {
+        "relation": "direct",
+        "refs": [
+          "PW.7",
+          "PW.8",
+          "RV.1"
+        ]
+      },
+      "basis": "SSDF code review and testing are the regular tests and reviews the CRA names. NIS2 asks for effectiveness to be assessed, which testing evidences."
+    },
+    {
+      "id": "II-4",
+      "cra": {
+        "ref": "ANNEX I Part II (4)",
+        "label": "Public disclosure of fixed vulnerabilities"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(e)"
+        ]
+      },
+      "ssdf": {
+        "relation": "partial",
+        "refs": [
+          "RV.1.3"
+        ]
+      },
+      "basis": "Public advisories for fixed vulnerabilities follow from a disclosure policy. Only the CRA sets their content and the condition that an update is available first."
+    },
+    {
+      "id": "II-5",
+      "cra": {
+        "ref": "ANNEX I Part II (5)",
+        "label": "Coordinated vulnerability disclosure policy"
+      },
+      "nis2": {
+        "relation": "direct",
+        "refs": [
+          "Art. 21(2)(e)"
+        ]
+      },
+      "ssdf": {
+        "relation": "direct",
+        "refs": [
+          "RV.1.3"
+        ]
+      },
+      "basis": "NIS2 names vulnerability disclosure in 21(2)(e) and RV.1.3 asks for a disclosure policy. The CRA adds that the policy is enforced."
+    },
+    {
+      "id": "II-6",
+      "cra": {
+        "ref": "ANNEX I Part II (6)",
+        "label": "Facilitate vulnerability information sharing"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(e)",
+          "Art. 21(3)"
+        ]
+      },
+      "ssdf": {
+        "relation": "direct",
+        "refs": [
+          "RV.1.1",
+          "RV.1.3"
+        ]
+      },
+      "basis": "RV.1.1 gathers reports from users and researchers, which needs the contact address the CRA requires. NIS2 21(3) covers supplier vulnerabilities from the receiving side."
+    },
+    {
+      "id": "II-7",
+      "cra": {
+        "ref": "ANNEX I Part II (7)",
+        "label": "Secure update distribution"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(e)"
+        ]
+      },
+      "ssdf": {
+        "relation": "partial",
+        "refs": [
+          "PS.2"
+        ]
+      },
+      "ssdfDraft": [
+        "PS.4"
+      ],
+      "basis": "PS.2 lets a recipient verify a release, and the 1.2 draft adds PS.4 for robust updates. The CRA asks for the whole distribution mechanism, automatic where applicable."
+    },
+    {
+      "id": "II-8",
+      "cra": {
+        "ref": "ANNEX I Part II (8)",
+        "label": "Timely, free security patches"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 21(2)(e)"
+        ]
+      },
+      "ssdf": {
+        "relation": "partial",
+        "refs": [
+          "RV.2"
+        ]
+      },
+      "basis": "SSDF requires remediation. Free of charge and advisory messages are CRA-only conditions."
+    },
+    {
+      "id": "ART-13-5",
+      "cra": {
+        "ref": "Article 13(5)",
+        "label": "Due diligence on third-party components"
+      },
+      "nis2": {
+        "relation": "direct",
+        "refs": [
+          "Art. 21(2)(d)",
+          "Art. 21(3)"
+        ]
+      },
+      "ssdf": {
+        "relation": "direct",
+        "refs": [
+          "PO.1.3",
+          "PW.4.4"
+        ]
+      },
+      "basis": "All three ask the receiving party to check the security of what it takes from suppliers. The CRA applies it to components integrated in the product, NIS2 to the entity's suppliers."
+    },
+    {
+      "id": "ART-14-VULN",
+      "cra": {
+        "ref": "Article 14(1) and (2)",
+        "label": "Reporting actively exploited vulnerabilities"
+      },
+      "nis2": {
+        "relation": "partial",
+        "refs": [
+          "Art. 23(4)"
+        ]
+      },
+      "ssdf": {
+        "relation": "none",
+        "refs": []
+      },
+      "basis": "Both use a 24-hour early warning and a 72-hour notification. The CRA trigger is an actively exploited vulnerability in a product and the NIS2 trigger is a significant incident at the entity. The CRA final report is due 14 days after a corrective or mitigating measure is available, the NIS2 final report one month after the notification. SSDF has no reporting to authorities."
+    },
+    {
+      "id": "ART-14-INCIDENT",
+      "cra": {
+        "ref": "Article 14(3) and (4)",
+        "label": "Reporting severe incidents"
+      },
+      "nis2": {
+        "relation": "direct",
+        "refs": [
+          "Art. 23(4)"
+        ]
+      },
+      "ssdf": {
+        "relation": "none",
+        "refs": []
+      },
+      "basis": "Same 24-hour, 72-hour and one-month structure as NIS2. The recipients differ: a CRA report goes through the ENISA single reporting platform to the CSIRT designated as coordinator, a NIS2 report to the national CSIRT or competent authority. No provision makes one report count as the other."
+    }
+  ]
+}
